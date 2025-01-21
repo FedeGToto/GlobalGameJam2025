@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa3b8a73c1cf2a4498515e8fa985740, type: 3}
   m_Name: TestCharacter
   m_EditorClassIdentifier: 
-  characterID: char_test
+  characterID: char_aggressive
   artwork: {fileID: 21300002, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
   characterName:
     m_TableReference:
