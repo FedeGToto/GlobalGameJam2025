@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
 {
     public bool ShieldUp;
     public float CurrentShield { get; private set; }
@@ -15,6 +15,9 @@ public class PlayerStats : MonoBehaviour
     public UnityEvent OnDie;
 
     public Stat Speed;
+    public Stat DashCooldown;
+    public Stat Attack;
+    public Stat AttackSpeed;
     public Stat MaxShield;
     public Stat ShieldCooldown;
     public Stat ShieldRegen;
@@ -23,9 +26,14 @@ public class PlayerStats : MonoBehaviour
     {
         Speed = new Stat(5f);
 
-        MaxShield = new Stat(1000f);
+        DashCooldown = new Stat(1f);
+
+        Attack = new Stat(5f);
+        AttackSpeed = new Stat(0.5f);
+
+        MaxShield = new Stat(100f);
         ShieldCooldown = new Stat(5f);
-        ShieldRegen = new Stat(100f);
+        ShieldRegen = new Stat(5f);
     }
 
     private void Start()
@@ -35,7 +43,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        if (CurrentShield > 0 && CurrentShield < MaxShield.Value)
+        if (ShieldUp && CurrentShield < MaxShield.Value)
         {
             if (shieldCooldown > 0)
             {
@@ -62,12 +70,14 @@ public class PlayerStats : MonoBehaviour
         return type switch
         {
             StatType.Speed => Speed,
+            StatType.Attack => Attack,
+            StatType.AttackSpeed => AttackSpeed,
             StatType.MaxShield => MaxShield,
             _ => null
         };
     }
 
-    public void TakeDamage(int dmg)
+    public void TakeDamage(float dmg)
     {
         if (!ShieldUp)
         {
@@ -85,6 +95,11 @@ public class PlayerStats : MonoBehaviour
             OnDamageTaken?.Invoke();
         }
     }
+
+    public float GetDamageValue()
+    {
+        return Attack.Value;
+    }
 }
 
 public enum StatType
@@ -92,5 +107,7 @@ public enum StatType
     Speed,
     MaxShield,
     ShieldCooldown,
-    ShieldRegen
+    ShieldRegen,
+    Attack,
+    AttackSpeed
 }

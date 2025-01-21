@@ -13,4 +13,34 @@ MonoBehaviour:
   m_Name: TestCharacter
   m_EditorClassIdentifier: 
   characterID: char_test
-  artwork: {fileID: 0}
+  artwork: {fileID: 21300002, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
+  characterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 4032884736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  characterDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 48425398272
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgradeText:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 69979926528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
