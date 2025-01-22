@@ -27,6 +27,18 @@ MonoBehaviour:
     m_Key: aggressive_upgrade
     m_Metadata:
       m_Items: []
+  - m_Id: 223123583627264
+    m_Key: empathetic_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223175328755712
+    m_Key: empathetic_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223187387379712
+    m_Key: empathetic_upgrade
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

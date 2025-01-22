@@ -29,7 +29,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 69979926528
-    m_Localized: '{oldValue1} > {newValue1}'
+    m_Localized: 'Max Damage Increase
+
+      {oldValue1}% > {newValue1}%'
+    m_Metadata:
+      m_Items:
+      - rid: 7287588854556524559
+  - m_Id: 223123583627264
+    m_Localized: Antonia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223175328755712
+    m_Localized: For each enemy in a radius from the player, the attack is empowered
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223187387379712
+    m_Localized: 'Damage per Enemy
+
+      {oldValue1}% > {newValue1}%'
     m_Metadata:
       m_Items:
       - rid: 7287588854556524559
@@ -42,3 +59,4 @@ MonoBehaviour:
         m_Entries: 
         m_SharedEntries:
         - id: 69979926528
+        - id: 223187387379712
