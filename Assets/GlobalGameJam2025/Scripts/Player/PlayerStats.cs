@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
 {
     public bool ShieldUp;
     public float CurrentShield { get; private set; }
+    public float DamageMultiplier = 1;
 
     private float shieldCooldown;
 

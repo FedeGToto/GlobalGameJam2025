@@ -41,6 +41,11 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  CharEffect:
+    rid: 7287588866280128514
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 7287588866280128514
+      type: {class: AggressiveEffect, ns: , asm: Assembly-CSharp}
+      data: 

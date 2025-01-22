@@ -2,12 +2,14 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerManager : Entity
 {
     [SerializeField] private PlayerStats stats;
     [SerializeField] private PlayerAim aim;
     [SerializeField] private PlayerInventory inventory;
+    [SerializeField] private PlayerEffects effects;
 
     [Header("Attack")]
     [SerializeField] private GameObject attackTrigger;
@@ -26,6 +28,8 @@ public class PlayerManager : Entity
 
     public StateMachine<PlayerManager> StateMachine { get; protected set; }
     public Vector2 MoveDirection;
+
+    public UnityEvent<Enemy> OnDamageDealt;
 
     public override void Start()
     {
@@ -48,6 +52,7 @@ public class PlayerManager : Entity
     public PlayerStats Stats => stats;
     public PlayerAim Aim => aim;
     public PlayerInventory Inventory => inventory;
+    public PlayerEffects Effects => effects;
 
     public void Attack(bool value)
     {
@@ -57,5 +62,10 @@ public class PlayerManager : Entity
     public void Shield(bool value)
     {
         shieldObject.SetActive(value);
+    }
+
+    public void DamageDealt(IDamagable damagable)
+    {
+        OnDamageDealt?.Invoke((Enemy)damagable);
     }
 }

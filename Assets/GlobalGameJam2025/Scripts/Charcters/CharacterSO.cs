@@ -17,6 +17,7 @@ public class CharacterSO : ScriptableObject
     [SerializeField] private LocalizedString upgradeText;
 
     [Header("Effect")]
+    [SerializeReference, SubclassSelector] public CharacterEffect CharEffect;
 
     private int level = 0;
     private PlayerManager owner;
@@ -34,11 +35,9 @@ public class CharacterSO : ScriptableObject
         if (Level < 1)
             return characterDescription.GetLocalizedString();
 
-        //var dict = itemEffect.GetItemUpgradeValues();
-        //upgradeText.Arguments = new object[] { dict };
-        //return upgradeText.GetLocalizedString();
-
-        return "Boh";
+        var dict = CharEffect.GetItemUpgradeValues();
+        upgradeText.Arguments = new object[] { dict };
+        return upgradeText.GetLocalizedString();
     }
 
     public void SetOwner(PlayerManager owner)
@@ -49,5 +48,7 @@ public class CharacterSO : ScriptableObject
     public virtual void LevelUp()
     {
         level++;
+
+        GameManager.Instance.Player.Effects.AddEffect(CharEffect, this);
     }
 }
