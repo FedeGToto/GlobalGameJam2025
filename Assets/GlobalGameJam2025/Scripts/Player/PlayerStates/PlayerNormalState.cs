@@ -36,7 +36,7 @@ public class PlayerNormalState : State<PlayerManager>
             owner.StateMachine.ChangeState(new PlayerShieldedState());
         }
 
-        if (InputManager.DASH)
+        if (InputManager.DASH && owner.DashTimer <= 0)
         {
             owner.StateMachine.ChangeState(new PlayerDashState());
         }

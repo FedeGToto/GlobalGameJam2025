@@ -21,6 +21,8 @@ public class PlayerManager : Entity
     [Header("Dash")]
     public float DashTime = 0.3f;
     public float DashMultiplier = 1.2f;
+    [SerializeField] private float dashCooldown = 3f;
+    public float DashTimer { get; private set; }
 
     [Header("Animations")]
     [SerializeField] private PlayerAnimation playerAnimation;
@@ -43,6 +45,9 @@ public class PlayerManager : Entity
     public virtual void Update()
     {
         StateMachine.Update();
+
+        if (DashTimer > 0)
+            DashTimer -= Time.deltaTime;
     }
 
     public virtual void FixedUpdate()
@@ -68,5 +73,16 @@ public class PlayerManager : Entity
     public void DamageDealt(IDamagable damagable)
     {
         OnDamageDealt?.Invoke((Enemy)damagable);
+    }
+
+    // Mi fanno cacare
+    public void DashCooldown()
+    {
+        DashTimer = dashCooldown;
+    }
+
+    public void RefundDash(float percentage)
+    {
+        DashTimer -= dashCooldown * percentage;
     }
 }

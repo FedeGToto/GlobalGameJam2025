@@ -86,6 +86,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 7287588854556524559
+  - m_Id: 308371829878784
+    m_Localized: Andrea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308436191473664
+    m_Localized: Killing an enemy grants extra movement and attack speed for a limited
+      amount of time, if the player does not have the bonus active.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308459495026688
+    m_Localized: 'Attack Speed
+
+      {oldValue1}% > {newValue1}%
+
+      Move Speed
+
+      {oldValue2}%
+      > {newValue2}%'
+    m_Metadata:
+      m_Items:
+      - rid: 7287588854556524559
   references:
     version: 2
     RefIds:
@@ -98,3 +119,4 @@ MonoBehaviour:
         - id: 223187387379712
         - id: 294401890906112
         - id: 299387156754432
+        - id: 308459495026688

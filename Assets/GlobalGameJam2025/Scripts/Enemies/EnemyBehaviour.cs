@@ -9,7 +9,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public StateMachine<EnemyBehaviour> StateMachine { get; private set; }
 
-    private void Start()
+    protected virtual void Start()
     {
         StateMachine = new StateMachine<EnemyBehaviour>(this);
     }

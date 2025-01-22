@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fa3b8a73c1cf2a4498515e8fa985740, type: 3}
-  m_Name: TestCharacter
+  m_Name: char_nerd
   m_EditorClassIdentifier: 
-  characterID: char_aggressive
-  artwork: {fileID: 21300002, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
+  characterID: char_nerd
+  artwork: {fileID: 21300000, guid: a805b56e6f3f85e4899d9b312557ddd3, type: 3}
   characterName:
     m_TableReference:
       m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
     m_TableEntryReference:
-      m_KeyId: 4032884736
+      m_KeyId: 308371829878784
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
     m_TableEntryReference:
-      m_KeyId: 48425398272
+      m_KeyId: 308436191473664
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -36,23 +36,27 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
     m_TableEntryReference:
-      m_KeyId: 69979926528
+      m_KeyId: 308459495026688
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
   CharEffect:
-    rid: 7287588866280128514
+    rid: 7287588873437708292
   references:
     version: 2
     RefIds:
-    - rid: 7287588866280128514
-      type: {class: AggressiveEffect, ns: , asm: Assembly-CSharp}
+    - rid: 7287588873437708292
+      type: {class: NerdEffect, ns: , asm: Assembly-CSharp}
       data:
-        maxMultiplier:
+        attackSpeed:
           Values:
           - 0.1
           - 0.2
           - 0.3
-        minIncrease: 0.01
-        attackCooldown: 3
+        moveSpeed:
+          Values:
+          - 0.1
+          - 0.2
+          - 0.3
+        cooldown: 6

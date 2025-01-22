@@ -13,7 +13,7 @@ public class BraveEffect : CharacterEffect
     {
         base.Setup(owner, character);
 
-        GameManager.Instance.Player.Stats.OnShieldChanged.AddListener(ShieldUpdate);
+        owner.Stats.OnShieldChanged.AddListener(ShieldUpdate);
     }
 
     private void ShieldUpdate(float currentShield)
@@ -24,13 +24,13 @@ public class BraveEffect : CharacterEffect
                 return;
 
             Modifier modifier = new Modifier(buffValue.GetValue(character.Level - 1), ModifierType.Additive, this);
-            GameManager.Instance.Player.Stats.Attack.AddModifier(modifier);
-            Debug.Log(GameManager.Instance.Player.Stats.Attack.Value);
+            owner.Stats.Attack.AddModifier(modifier);
+            Debug.Log(owner.Stats.Attack.Value);
             hasAlreadyBuff = true;
         }
         else
         {
-            GameManager.Instance.Player.Stats.Attack.TryRemoveAllModifiersOf(this);
+            owner.Stats.Attack.TryRemoveAllModifiersOf(this);
             hasAlreadyBuff = false;
         }
     }

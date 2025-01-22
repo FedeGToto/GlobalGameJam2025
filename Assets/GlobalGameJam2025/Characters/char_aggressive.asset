@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa3b8a73c1cf2a4498515e8fa985740, type: 3}
+  m_Name: char_aggressive
+  m_EditorClassIdentifier: 
+  characterID: char_aggressive
+  artwork: {fileID: 21300002, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
+  characterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 4032884736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  characterDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 48425398272
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgradeText:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 69979926528
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CharEffect:
+    rid: 7287588866280128514
+  references:
+    version: 2
+    RefIds:
+    - rid: 7287588866280128514
+      type: {class: AggressiveEffect, ns: , asm: Assembly-CSharp}
+      data:
+        maxMultiplier:
+          Values:
+          - 0.1
+          - 0.2
+          - 0.3
+        minIncrease:
+          Values:
+          - 0.1
+          - 0.2
+          - 0.3
+        attackCooldown: 3

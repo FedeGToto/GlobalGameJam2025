@@ -14,7 +14,7 @@ public class PlayerDashState : State<PlayerManager>
 
     public override void Exit(PlayerManager owner)
     {
-
+        owner.DashCooldown();
     }
 
     public override void FixedUpdate(PlayerManager owner)

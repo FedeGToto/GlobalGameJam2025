@@ -36,6 +36,9 @@ public class CharacterEffect
         else
         {
             cooldownTimer -= Time.deltaTime;
+
+            if (cooldownTimer <= 0)
+                CooldownEnded();
         }
     }
 
@@ -49,6 +52,11 @@ public class CharacterEffect
         //float newCooldown = cooldown * (100 / (100 + characterCooldown));
 
         cooldownTimer = cooldown;
+    }
+
+    protected virtual void CooldownEnded()
+    {
+
     }
 
     public virtual Dictionary<string, string> GetItemUpgradeValues()

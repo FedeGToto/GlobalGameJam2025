@@ -63,6 +63,18 @@ MonoBehaviour:
     m_Key: agile_upgrade
     m_Metadata:
       m_Items: []
+  - m_Id: 308371829878784
+    m_Key: nerd_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308436191473664
+    m_Key: nerd_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 308459495026688
+    m_Key: nerd_upgrade
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

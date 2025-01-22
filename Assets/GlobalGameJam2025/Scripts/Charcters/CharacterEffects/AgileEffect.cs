@@ -24,10 +24,9 @@ public class AgileEffect : CharacterEffect
     private void OnDamageDealt(Enemy enemy)
     {
         if (!hasEmpowered) return;
-        
-        ResetEmpowerment();
 
-        // Reduce cooldown
+        owner.RefundDash(cooldownHaste.GetValue(character.Level - 1));
+        ResetEmpowerment();
     }
 
     private void ResetEmpowerment()

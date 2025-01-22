@@ -6,8 +6,8 @@ using UnityEngine;
 [Serializable]
 public class AggressiveEffect : CharacterEffect
 {
-    [SerializeField] LevelUpValue<float> maxMultiplier;
-    [SerializeField] private float minIncrease = 0.01f;
+    [SerializeField] private LevelUpValue<float> maxMultiplier;
+    [SerializeField] private LevelUpValue<float> minIncrease;
     [SerializeField] private float attackCooldown = 3f;
 
     private Enemy lastEnemy;
@@ -53,7 +53,7 @@ public class AggressiveEffect : CharacterEffect
         {
             float max = maxMultiplier.GetValue(character.Level - 1);
 
-            multiplier += minIncrease;
+            multiplier += minIncrease.GetValue(character.Level - 1);
             if (multiplier >= max)
                 multiplier = max;
 

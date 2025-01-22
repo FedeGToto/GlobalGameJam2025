@@ -16,7 +16,6 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
     public UnityEvent OnDie;
 
     public Stat Speed;
-    public Stat DashCooldown;
     public Stat Attack;
     public Stat AttackSpeed;
     public Stat MaxShield;
@@ -26,8 +25,6 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
     private void Awake()
     {
         Speed = new Stat(5f);
-
-        DashCooldown = new Stat(1f);
 
         Attack = new Stat(5f);
         AttackSpeed = new Stat(0.5f);
@@ -71,9 +68,13 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
         return type switch
         {
             StatType.Speed => Speed,
+
             StatType.Attack => Attack,
             StatType.AttackSpeed => AttackSpeed,
+
             StatType.MaxShield => MaxShield,
+            StatType.ShieldCooldown => ShieldCooldown,
+            StatType.ShieldRegen => ShieldRegen,
             _ => null
         };
     }
@@ -106,9 +107,11 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
 public enum StatType
 {
     Speed,
+
     MaxShield,
     ShieldCooldown,
     ShieldRegen,
+
     Attack,
     AttackSpeed
 }
