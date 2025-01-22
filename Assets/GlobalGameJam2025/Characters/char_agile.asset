@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa3b8a73c1cf2a4498515e8fa985740, type: 3}
+  m_Name: char_agile
+  m_EditorClassIdentifier: 
+  characterID: char_agile
+  artwork: {fileID: 21300002, guid: a805b56e6f3f85e4899d9b312557ddd3, type: 3}
+  characterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 299344093835264
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  characterDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 299365895827456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgradeText:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 299387156754432
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CharEffect:
+    rid: 7287588873437708291
+  references:
+    version: 2
+    RefIds:
+    - rid: 7287588873437708291
+      type: {class: AgileEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attackEnpowerment:
+          Values:
+          - 0.1
+          - 0.15
+          - 0.2
+        cooldownHaste:
+          Values:
+          - 0.4
+          - 0.5
+          - 0.6
+        empowerDuration: 1

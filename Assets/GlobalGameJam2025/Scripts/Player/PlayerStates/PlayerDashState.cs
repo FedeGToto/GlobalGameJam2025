@@ -9,6 +9,7 @@ public class PlayerDashState : State<PlayerManager>
     public override void Enter(PlayerManager owner)
     {
         dashTimer = owner.DashTime;
+        owner.OnPlayerDash?.Invoke();
     }
 
     public override void Exit(PlayerManager owner)

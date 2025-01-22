@@ -39,6 +39,30 @@ MonoBehaviour:
     m_Key: empathetic_upgrade
     m_Metadata:
       m_Items: []
+  - m_Id: 294279299788800
+    m_Key: brave_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294306810228736
+    m_Key: brave_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294401890906112
+    m_Key: brave_upgrade
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299344093835264
+    m_Key: agile_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299365895827456
+    m_Key: agile_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299387156754432
+    m_Key: agile_upgrade
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

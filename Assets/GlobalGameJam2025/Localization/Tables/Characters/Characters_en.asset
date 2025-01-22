@@ -50,6 +50,42 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 7287588854556524559
+  - m_Id: 294279299788800
+    m_Localized: Vittorio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294306810228736
+    m_Localized: When the shield is broken, your damage is increased.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 294401890906112
+    m_Localized: 'Damage Increase
+
+      {oldValue1}% > {newValue1}%'
+    m_Metadata:
+      m_Items:
+      - rid: 7287588854556524559
+  - m_Id: 299344093835264
+    m_Localized: Sara
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299365895827456
+    m_Localized: After dashing, your next attack is empowered for a limited time.
+      Landing a strike in this reduces your dash cooldown.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299387156754432
+    m_Localized: 'Damage Increase
+
+      {oldValue1}% > {newValue1}%
+
+      Dash
+      Cooldown Refund
+
+      {oldValue2}% > {newValue2}%'
+    m_Metadata:
+      m_Items:
+      - rid: 7287588854556524559
   references:
     version: 2
     RefIds:
@@ -60,3 +96,5 @@ MonoBehaviour:
         m_SharedEntries:
         - id: 69979926528
         - id: 223187387379712
+        - id: 294401890906112
+        - id: 299387156754432

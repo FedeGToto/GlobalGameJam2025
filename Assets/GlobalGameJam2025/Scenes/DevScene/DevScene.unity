@@ -1697,6 +1697,8 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: c22c899b5ecec2040906670e9a794632, type: 2}
   - {fileID: 11400000, guid: 5c278e6f0fcfb4847a99e40d773fcd80, type: 2}
+  - {fileID: 11400000, guid: 0820ca04d3a6328408d1836d58eda3f0, type: 2}
+  - {fileID: 11400000, guid: 54b305dc7ffeba34f9a42c031f6db933, type: 2}
 --- !u!114 &518432800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2818,6 +2820,9 @@ MonoBehaviour:
   playerAnimation: {fileID: 2088698711}
   MoveDirection: {x: 0, y: 0}
   OnDamageDealt:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerDash:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &888767201

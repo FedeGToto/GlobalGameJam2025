@@ -30,6 +30,7 @@ public class PlayerManager : Entity
     public Vector2 MoveDirection;
 
     public UnityEvent<Enemy> OnDamageDealt;
+    public UnityEvent OnPlayerDash;
 
     public override void Start()
     {
