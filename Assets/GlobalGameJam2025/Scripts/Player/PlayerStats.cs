@@ -27,7 +27,7 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
         Speed = new Stat(5f);
 
         Attack = new Stat(5f);
-        AttackSpeed = new Stat(0.5f);
+        AttackSpeed = new Stat(0.3f);
 
         MaxShield = new Stat(100f);
         ShieldCooldown = new Stat(5f);

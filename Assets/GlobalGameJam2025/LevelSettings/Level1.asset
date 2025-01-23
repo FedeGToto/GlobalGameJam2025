@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   enemiesNumber: 40
-  spawnRate: 3
+  spawnRate: 5
   enemies:
   - {fileID: 5432355483844059521, guid: c045cb982735d1d48a7a544d1cc74380, type: 3}
   - {fileID: 2427659764794028156, guid: 81386f36f11577a44a692a318e831330, type: 3}

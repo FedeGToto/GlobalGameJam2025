@@ -30,7 +30,7 @@ public class FollowerEnemyWalkState : State<EnemyBehaviour>
 
         if (distance <= this.owner.AttackDistance)
         {
-            owner.StateMachine.ChangeState(new FollowerEnemyAttackState());
+            owner.StateMachine.ChangeState(new FollowerEnemyPrepareToAttackState());
         }
     }
 }

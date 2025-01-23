@@ -2,22 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowerEnemyAttackState : State<EnemyBehaviour>
+public class FollowerEnemyAttackExitState : State<EnemyBehaviour>
 {
     FollowerBehaviour owner;
     float cooldownTimer;
 
     public override void Enter(EnemyBehaviour owner)
     {
-        owner.Enemy.AI.isStopped = true;
         this.owner = owner as FollowerBehaviour;
-        cooldownTimer = this.owner.AttackModule.Duration;
-        this.owner.AttackModule.Attack(true);
+        cooldownTimer = this.owner.AttackModule.ExitDuration;
     }
 
     public override void Exit(EnemyBehaviour owner)
     {
-        this.owner.AttackModule.Attack(false);
         owner.Enemy.AI.isStopped = false;
     }
 
@@ -31,7 +28,7 @@ public class FollowerEnemyAttackState : State<EnemyBehaviour>
         cooldownTimer -= Time.deltaTime;
         if (cooldownTimer <= 0)
         {
-            owner.StateMachine.ChangeState(new FollowerEnemyAttackExitState());
+            owner.StateMachine.ChangeState(new FollowerEnemyWalkState());
         }
     }
 }
