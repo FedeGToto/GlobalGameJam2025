@@ -13,8 +13,15 @@ public class GameEvents : MonoBehaviour
     }
 
     public event Action OnKill;
+    public event Action OnGameOver;
+
     public void Kill()
     {
         OnKill?.Invoke();
+    }
+
+    public void GameOver()
+    {
+        OnGameOver?.Invoke();
     }
 }

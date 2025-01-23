@@ -5,8 +5,11 @@ using UnityEngine.Events;
 
 public class DamageZone : MonoBehaviour
 {
+    public enum DamageTo { Enemy, Player, Everyone }
+
     [SerializeField] private bool cacheDamage;
     [SerializeField] private GameObject owner;
+    [SerializeField] private DamageTo damageTo;
 
     public UnityEvent<IDamagable> DamageDealt;
 
@@ -14,7 +17,7 @@ public class DamageZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == owner) return;
+        if (!CompareEntity(other.GetComponent<Entity>())) return; 
 
         if (other.TryGetComponent(out IDamagable damagable))
         {
@@ -24,6 +27,16 @@ public class DamageZone : MonoBehaviour
 
             damagable.TakeDamage(damage);
         }
+    }
+
+    public bool CompareEntity(Entity entity)
+    {
+        return damageTo switch
+        {
+            DamageTo.Enemy => entity is Enemy,
+            DamageTo.Player => entity is PlayerManager,
+            _=> true
+        };
     }
 
     public void SetOwner(GameObject owner)

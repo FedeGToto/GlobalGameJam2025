@@ -10,14 +10,14 @@ public class InputManager : Singleton<InputManager>
     [SerializeField] private string attackName = "Attack";
     [SerializeField] private string shieldName = "Shield";
     [SerializeField] private string dashName = "Dash";
-    [SerializeField] private string pauseName = "Pause";
+    [SerializeField] private string statsName = "Stats";
 
     public static float HORIZONTAL_MOVE;
     public static float VERTICAL_MOVE;
     public static bool ATTACK;
     public static bool SHIELD;
     public static bool DASH;
-    public static bool PAUSE;
+    public static bool STATS;
 
     private Player playerControls;
 
@@ -36,7 +36,7 @@ public class InputManager : Singleton<InputManager>
         SHIELD = playerControls.GetButton(shieldName);
         DASH = playerControls.GetButtonDown(dashName);
 
-        PAUSE = playerControls.GetButtonDown(pauseName);
+        STATS = playerControls.GetButton(statsName);
     }
 
     public bool IsUsingController()

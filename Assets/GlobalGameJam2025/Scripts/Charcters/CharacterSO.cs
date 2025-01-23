@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using UnityEngine.Localization;
-using static UnityEngine.UI.GridLayoutGroup;
 
 [CreateAssetMenu(fileName = "New Character", menuName = "Global Game Jam 2025/Character")]
 public class CharacterSO : ScriptableObject

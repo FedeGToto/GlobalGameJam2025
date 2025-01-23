@@ -71,6 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cacheDamage: 1
   owner: {fileID: 0}
+  damageTo: 1
   DamageDealt:
     m_PersistentCalls:
       m_Calls: []

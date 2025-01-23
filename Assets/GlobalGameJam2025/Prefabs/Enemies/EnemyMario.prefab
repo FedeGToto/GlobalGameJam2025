@@ -18,6 +18,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.75
       objectReference: {fileID: 0}
+    - target: {fileID: 4492780657448496214, guid: 1d5f3a8955243c74e95510fc33a04cf6,
+        type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492780657448496214, guid: 1d5f3a8955243c74e95510fc33a04cf6,
+        type: 3}
+      propertyPath: healthPoints
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5041813660439441227, guid: 1d5f3a8955243c74e95510fc33a04cf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79,6 +89,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2077797365, guid: ca58df4937ca69e46b8bc6e866384fb5,
         type: 3}
+    - target: {fileID: 6966498083350326497, guid: 1d5f3a8955243c74e95510fc33a04cf6,
+        type: 3}
+      propertyPath: m_Speed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8638548499558535833, guid: 1d5f3a8955243c74e95510fc33a04cf6,
         type: 3}
       propertyPath: m_Name
@@ -124,8 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2427659764794028156}
-  MoveRadius: 10
-  AttackDistance: 15
+  MoveRadius: 8
+  AttackDistance: 10
   Bullet: {fileID: 3058858400303075764, guid: d4641910cb969d54199d83dd7debbaee, type: 3}
-  IdleStateDuration: 1
-  AttackStateDuration: 6
+  IdleStateDuration: 0.5
+  AttackStateDuration: 5

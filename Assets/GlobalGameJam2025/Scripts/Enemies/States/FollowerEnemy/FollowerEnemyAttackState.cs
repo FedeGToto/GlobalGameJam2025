@@ -2,35 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowerEnemyWalkState : State<EnemyBehaviour>
+public class FollowerEnemyAttackState : State<EnemyBehaviour>
 {
     FollowerBehaviour owner;
+    float cooldownTimer;
 
     public override void Enter(EnemyBehaviour owner)
     {
         this.owner = owner as FollowerBehaviour;
+        this.owner.AttackModule.Attack(true);
+        cooldownTimer = this.owner.AttackModule.Duration;
     }
 
     public override void Exit(EnemyBehaviour owner)
     {
-        
+        this.owner.AttackModule.Attack(false);
     }
 
     public override void FixedUpdate(EnemyBehaviour owner)
     {
-        
+
     }
 
     public override void Update(EnemyBehaviour owner)
     {
-        PlayerManager player = GameManager.Instance.Player;
-
-        owner.Enemy.AI.SetDestination(player.transform.position);
-        float distance = Vector3.Distance(owner.transform.position, player.transform.position);
-
-        if (distance <= this.owner.AttackDistance)
+        if (cooldownTimer <= 0)
         {
-            owner.StateMachine.ChangeState(new FollowerEnemyAttackState());
+            owner.StateMachine.ChangeState(new FollowerEnemyWalkState());
+        }
+        else
+        {
+            cooldownTimer -= Time.deltaTime;
         }
     }
 }

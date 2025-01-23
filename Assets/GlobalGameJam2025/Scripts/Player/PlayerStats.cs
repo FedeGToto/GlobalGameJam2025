@@ -37,11 +37,13 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
     private void Start()
     {
         CurrentShield = MaxShield.Value;
+
+        OnDie.AddListener(() => { Debug.Log("Died!"); });
     }
 
     private void Update()
     {
-        if (ShieldUp && CurrentShield < MaxShield.Value)
+        if (!ShieldUp && CurrentShield < MaxShield.Value)
         {
             if (shieldCooldown > 0)
             {
@@ -54,12 +56,6 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
                 if (CurrentShield > MaxShield.Value)
                     CurrentShield = MaxShield.Value;
             }
-        }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            ShieldUp = true;
-            TakeDamage(15);
         }
     }
 
@@ -84,6 +80,7 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
         if (!ShieldUp)
         {
             OnDie?.Invoke();
+            GameEvents.current.GameOver();
         }
         else
         {

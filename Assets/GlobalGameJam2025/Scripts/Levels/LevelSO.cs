@@ -6,9 +6,11 @@ using UnityEngine;
 public class LevelSO : ScriptableObject
 {
     [SerializeField] private int enemiesNumber;
+    [SerializeField] private float spawnRate;
 
     [SerializeField] private Enemy[] enemies;
 
     public int Numbers => enemiesNumber;
+    public float SpawnRate => spawnRate;
     public Enemy[] Enemies => enemies;
 }

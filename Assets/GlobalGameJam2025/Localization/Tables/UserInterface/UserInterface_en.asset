@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 35431444480
-    m_Localized: Quit
+    m_Localized: Main Menu
     m_Metadata:
       m_Items: []
   - m_Id: 156296999399424
@@ -44,6 +44,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 169322280448000
     m_Localized: Bonds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 752095701561344
+    m_Localized: YOU DIED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 754754072408064
+    m_Localized: Retry
     m_Metadata:
       m_Items: []
   references:
