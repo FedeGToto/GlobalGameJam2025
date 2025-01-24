@@ -17,6 +17,7 @@ public class CounterUI : MonoBehaviour
         GameEvents.current.OnKill += UpdateCounter;
 
         OnLevelStarted(0);
+        UpdateCounter();
     }
 
     private void OnDestroy()
@@ -28,7 +29,6 @@ public class CounterUI : MonoBehaviour
     {
         currentEnemies = -1;
         maxEnemies = GameManager.Instance.Level.GetLevel(level).Numbers;
-        UpdateCounter();
     }
 
     private void UpdateCounter()
