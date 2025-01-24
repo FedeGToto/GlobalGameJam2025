@@ -30,7 +30,7 @@ public class NerdEffect : CharacterEffect
             Modifier attackModifier = new Modifier(-attackSpeed.GetValue(level), ModifierType.Additive, this);
             Modifier speedModifier = new Modifier(moveSpeed.GetValue(level), ModifierType.Additive, this);
 
-            owner.Stats.Speed.AddModifier(attackModifier);
+            owner.Stats.Speed.AddModifier(speedModifier);
             owner.Stats.AttackSpeed.AddModifier(attackModifier);
 
             SetOnCooldown(cooldown);

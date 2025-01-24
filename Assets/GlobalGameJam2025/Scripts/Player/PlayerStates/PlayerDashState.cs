@@ -19,8 +19,14 @@ public class PlayerDashState : State<PlayerManager>
 
     public override void FixedUpdate(PlayerManager owner)
     {
-        Vector3 movement = owner.Stats.Speed.Value * owner.DashMultiplier * Time.fixedDeltaTime * new Vector3(owner.MoveDirection.x, 0, owner.MoveDirection.y).normalized;
-        owner.Rigidbody.MovePosition(owner.Rigidbody.position + movement);
+        Vector3 direction = new Vector3(owner.MoveDirection.x, 0, owner.MoveDirection.y).normalized;
+        float force = owner.Stats.Speed.Value * owner.DashMultiplier * Time.fixedDeltaTime;
+
+        if (!owner.Rigidbody.SweepTest(direction, out RaycastHit hit, 1))
+        {
+            Vector3 movement = force * direction;
+            owner.Rigidbody.MovePosition(owner.Rigidbody.position + movement);
+        }
     }
 
     public override void Update(PlayerManager owner)
