@@ -67,6 +67,22 @@ MonoBehaviour:
     m_Key: win_screen
     m_Metadata:
       m_Items: []
+  - m_Id: 1155550001819648
+    m_Key: main_newgame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1155832110706688
+    m_Key: main_credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1156776747659264
+    m_Key: main_quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1157228826521600
+    m_Key: main_back
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

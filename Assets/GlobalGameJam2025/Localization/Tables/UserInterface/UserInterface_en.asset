@@ -70,6 +70,22 @@ MonoBehaviour:
     m_Localized: YOU WON
     m_Metadata:
       m_Items: []
+  - m_Id: 1155550001819648
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1155832110706688
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1156776747659264
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1157228826521600
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

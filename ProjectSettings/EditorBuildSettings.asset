@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/GlobalGameJam2025/Scenes/MainMenu/MainMenu.unity
     guid: bcf22fbc00deab245a7dd012b9952da8
   - enabled: 1
