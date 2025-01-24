@@ -42,7 +42,58 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   dialogues:
-    Values: []
+    Values:
+    - lines:
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 43350818353152
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 43425372106752
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - lines:
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 43449304805376
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 43515121823744
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - lines:
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 43576694206464
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 43637058629632
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
   CharEffect:
     rid: 7287588873437708290
   references:

@@ -27,6 +27,118 @@ MonoBehaviour:
     m_Key: aggressive_level3_1
     m_Metadata:
       m_Items: []
+  - m_Id: 42976153759744
+    m_Key: agile_level1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43022567927808
+    m_Key: agile_level2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43070127140864
+    m_Key: agile_level2_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43116205764608
+    m_Key: agile_level3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43186871398400
+    m_Key: agile_level3_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43350818353152
+    m_Key: brave_level1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43425372106752
+    m_Key: brave_level1_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43449304805376
+    m_Key: brave_level2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43515121823744
+    m_Key: brave_level2_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43576694206464
+    m_Key: brave_level3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43637058629632
+    m_Key: brave_level3_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45035238256640
+    m_Key: nerd_level1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45489531711488
+    m_Key: nerd_level1_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45535618723840
+    m_Key: nerd_level2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45581466660864
+    m_Key: nerd_level2_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45623887851520
+    m_Key: nerd_level3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45687368642560
+    m_Key: nerd_level3_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45729869524992
+    m_Key: empatic_level1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45779534278656
+    m_Key: empatic_level1_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45813130653696
+    m_Key: empatic_level2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45855119831040
+    m_Key: empatic_level2_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45887059456000
+    m_Key: empatic_level3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45917925339136
+    m_Key: strategist_level1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46052247924736
+    m_Key: strategist_level1_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46069478125568
+    m_Key: strategist_level2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46137337769984
+    m_Key: strategist_level2_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46157139079168
+    m_Key: strategist_level3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46208586412032
+    m_Key: strategist_level3_2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

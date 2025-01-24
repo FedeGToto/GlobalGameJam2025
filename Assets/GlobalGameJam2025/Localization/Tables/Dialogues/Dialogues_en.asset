@@ -30,6 +30,136 @@ MonoBehaviour:
     m_Localized: AHH! UGH! AUG! BOK GHOO! AUGH AUH! AU! (Would you like an ice cream?)
     m_Metadata:
       m_Items: []
+  - m_Id: 42976153759744
+    m_Localized: Hi, sorry I can't talk. I'm training for the Stocazzo marathon,
+      do you want to go for a jog with me on the seafront?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43022567927808
+    m_Localized: 'Do you want to train again? You are really tireless, I like you! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43070127140864
+    m_Localized: Come on, this time we go up Mount Wesuvius but let's compete this
+      time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43116205764608
+    m_Localized: Look who's here, my favorite athlete! Let's see who gets there first
+      at Da Michele's pizzeria.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43186871398400
+    m_Localized: Whoever gets there last gets dinner... Oh, I'll have a four cheese
+      with celery, spinach and onions!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43350818353152
+    m_Localized: Hey, you! Don't be afraid! You have to learn to fight your fears,
+      your traumas!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43425372106752
+    m_Localized: Look at me, how cool and fit I am!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43449304805376
+    m_Localized: Hey, you! I see you're still here! Do you want me to give you more
+      advice? Well, then... Um...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43515121823744
+    m_Localized: Imagine that your worst enemies have an egg on their head and are
+      running around behaving like chickens!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43576694206464
+    m_Localized: Hey, you! You're still here? I'm out of advice to... I mean...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43637058629632
+    m_Localized: Everything has a price! Buy my $1,000,000,000,000,000,000 course
+      and your future will be secured!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45035238256640
+    m_Localized: Uh... Uhm... Sorry, i was busy finishing this chapter of "The theory
+      of everything"...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45489531711488
+    m_Localized: You can come back once i finish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45535618723840
+    m_Localized: Hey, you're that one! Sorry about last time but i was on the best
+      part of the book...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45581466660864
+    m_Localized: Speaking of which, dont you think that Planck's constant is a really
+      cute number?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45623887851520
+    m_Localized: Hi! You came just at the right moment! I wanted to talk to you about
+      a dilemma i had... if the string theory...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45687368642560
+    m_Localized: Hey, are you listening to me?!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45729869524992
+    m_Localized: Sorry, i don't want to sound intrusive, do you need a hand? I don't
+      mean to imply that you can't handle yourself...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45779534278656
+    m_Localized: I could never, but it seems like something is bothering you...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45813130653696
+    m_Localized: Hi, hello, do you remember me? How are you feeling today?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45855119831040
+    m_Localized: You seem a little better but if you want to talk you can talk to
+      me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45887059456000
+    m_Localized: Howdy! How nice to see you in good health, it seems like you are
+      bursting with energy today!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45917925339136
+    m_Localized: 'Hm? What''s with that dull look? And the posture? STAND UP STRAIGHT,
+      SOL... '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46052247924736
+    m_Localized: Uh... Sorry... Professional deformation...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46069478125568
+    m_Localized: Soldier! I find you in good health... BUT YOUR BACK MUST BE STRAIGHT!
+      CHIN UP!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46137337769984
+    m_Localized: AND NOW TEN LAPS OF THE FIELD! (Yeah but there is no field here...)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46157139079168
+    m_Localized: Is that you, soldier? I see the pride with which you move and the
+      confidence in your bearing...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 46208586412032
+    m_Localized: Maybe I should start calling you corporal.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

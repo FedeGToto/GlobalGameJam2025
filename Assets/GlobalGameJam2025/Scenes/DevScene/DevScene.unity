@@ -7730,6 +7730,12 @@ MonoBehaviour:
   CanSpawn: 1
   levels:
   - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
+  - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
+  - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
+  - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
+  - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
+  - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
+  - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
   spawnPoints:
   - {fileID: 1623060545}
   - {fileID: 1255959686}
