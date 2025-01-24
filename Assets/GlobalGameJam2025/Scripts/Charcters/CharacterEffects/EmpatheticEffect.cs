@@ -17,6 +17,11 @@ public class EmpatheticEffect : CharacterEffect
         base.Setup(owner, character);
 
         enemies = new List<GameObject>();
+
+        Modifier shieldValueModifier = new Modifier(-10f, ModifierType.Flat);
+        Modifier shieldRegenModifier = new Modifier(-1f, ModifierType.Flat);
+        owner.Stats.MaxShield.AddModifier(shieldValueModifier);
+        owner.Stats.ShieldRegen.AddModifier(shieldRegenModifier);
     }
 
     protected override void EffectTick()

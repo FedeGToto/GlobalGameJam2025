@@ -17,6 +17,13 @@ public class StrategistEffect : CharacterEffect
         base.Setup(owner, character);
 
         firePoint = owner.FirePoint;
+
+        Modifier shieldValueModifier = new Modifier(-5f, ModifierType.Flat);
+        Modifier shieldRegenModifier = new Modifier(-0.5f, ModifierType.Flat);
+        Modifier shieldCooldownModifier = new Modifier(1f, ModifierType.Flat);
+        owner.Stats.MaxShield.AddModifier(shieldValueModifier);
+        owner.Stats.ShieldRegen.AddModifier(shieldRegenModifier);
+        owner.Stats.ShieldCooldown.AddModifier(shieldCooldownModifier);
     }
 
     protected override void EffectTick()

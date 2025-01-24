@@ -15,6 +15,11 @@ public class NerdEffect : CharacterEffect
         base.Setup(owner, character);
 
         GameEvents.current.OnKill += OnKill;
+
+        Modifier shieldRegenModifier = new Modifier(-0.5f, ModifierType.Flat);
+        Modifier shieldCooldownModifier = new Modifier(1f, ModifierType.Flat);
+        owner.Stats.ShieldRegen.AddModifier(shieldRegenModifier);
+        owner.Stats.ShieldCooldown.AddModifier(shieldCooldownModifier);
     }
 
     private void OnKill()

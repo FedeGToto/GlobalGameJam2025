@@ -19,6 +19,11 @@ public class AggressiveEffect : CharacterEffect
         base.Setup(owner, character);
 
         owner.OnDamageDealt.AddListener(DamageDealt);
+
+        Modifier shieldValueModifier = new Modifier(-15f, ModifierType.Flat);
+        Modifier shieldRegenModifier = new Modifier(-0.5f, ModifierType.Flat);
+        owner.Stats.MaxShield.AddModifier(shieldValueModifier);
+        owner.Stats.ShieldRegen.AddModifier(shieldRegenModifier);
     }
 
     protected override void EffectTick()

@@ -94,4 +94,6 @@ public class LevelManager : MonoBehaviour
     }
 
     public List<CharacterSO> GetNextBonds() => nextBonds;
+
+    public LevelSO GetLevel(int level) => levels[level];
 }

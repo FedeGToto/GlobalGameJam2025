@@ -19,6 +19,11 @@ public class AgileEffect : CharacterEffect
 
         owner.OnPlayerDash.AddListener(OnDash);
         owner.OnDamageDealt.AddListener(OnDamageDealt);
+
+        Modifier shieldValueModifier = new Modifier(-10f, ModifierType.Flat);
+        Modifier shieldCooldownModifier = new Modifier(0.5f, ModifierType.Flat);
+        owner.Stats.MaxShield.AddModifier(shieldValueModifier);
+        owner.Stats.ShieldCooldown.AddModifier(shieldCooldownModifier);
     }
 
     private void OnDamageDealt(Enemy enemy)

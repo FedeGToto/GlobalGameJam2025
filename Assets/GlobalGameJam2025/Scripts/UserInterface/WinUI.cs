@@ -20,7 +20,10 @@ public class WinUI : MonoBehaviour
     private void OnWin()
     {
         winCanvasGroup.gameObject.SetActive(true);
-        winCanvasGroup.DOFade(1, animationDuration);
+        winCanvasGroup.DOFade(1f, animationDuration).OnComplete(() =>
+        {
+            winCanvasGroup.interactable = true;
+        });
     }
 
     public void MainMenu()

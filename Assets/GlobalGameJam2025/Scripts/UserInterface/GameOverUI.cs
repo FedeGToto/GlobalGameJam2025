@@ -20,7 +20,10 @@ public class GameOverUI : MonoBehaviour
     private void OnGameOver()
     {
         gameOverCanvasGroup.gameObject.SetActive(true);
-        gameOverCanvasGroup.DOFade(1, animationDuration);
+        gameOverCanvasGroup.DOFade(1f, animationDuration).OnComplete(() =>
+        {
+            gameOverCanvasGroup.interactable = true;
+        });
     }
 
     public void MainMenu()

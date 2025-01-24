@@ -14,6 +14,11 @@ public class BraveEffect : CharacterEffect
         base.Setup(owner, character);
 
         owner.Stats.OnShieldChanged.AddListener(ShieldUpdate);
+
+        Modifier shieldValueModifier = new Modifier(-15f, ModifierType.Flat);
+        Modifier shieldCooldownModifier = new Modifier(1f, ModifierType.Flat);
+        owner.Stats.MaxShield.AddModifier(shieldValueModifier);
+        owner.Stats.ShieldCooldown.AddModifier(shieldCooldownModifier);
     }
 
     private void ShieldUpdate(float currentShield)
