@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 010c1583907a73b448e8550df37dab6c, type: 3}
-  m_Name: Level1
+  m_Name: Level5
   m_EditorClassIdentifier: 
-  enemiesNumber: 1
-  spawnRate: 5
+  enemiesNumber: 20
+  spawnRate: 7
   enemies:
   - {fileID: 5432355483844059521, guid: c045cb982735d1d48a7a544d1cc74380, type: 3}
+  - {fileID: 2427659764794028156, guid: 81386f36f11577a44a692a318e831330, type: 3}
+  - {fileID: 2336341736221051387, guid: 034e4a66ae62dc54d8f1d0001c07f239, type: 3}
