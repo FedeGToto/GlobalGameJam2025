@@ -8,6 +8,7 @@ public class TorrettaBehaviour : EnemyBehaviour
     public float MoveRadius;
 
     [Header("Shoot")]
+    public AudioSource ShootSource;
     public float AttackDistance;
     public Bullet Bullet;
     public Transform firePoint;

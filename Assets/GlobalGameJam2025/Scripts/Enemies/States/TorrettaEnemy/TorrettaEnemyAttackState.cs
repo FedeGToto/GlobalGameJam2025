@@ -11,6 +11,7 @@ public class TorrettaEnemyAttackState : State<EnemyBehaviour>
     public override void Enter(EnemyBehaviour owner)
     {
         realOwner = owner as TorrettaBehaviour;
+        realOwner.ShootSource.Play();
         bullet = Object.Instantiate(realOwner.Bullet, realOwner.firePoint.position, realOwner.firePoint.rotation);
         bullet.SetOwner(owner.gameObject);
         bullet.Shoot();
