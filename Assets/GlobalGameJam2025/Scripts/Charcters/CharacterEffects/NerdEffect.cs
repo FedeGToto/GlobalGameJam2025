@@ -27,7 +27,7 @@ public class NerdEffect : CharacterEffect
         if (cooldownTimer <= 0)
         {
             int level = character.Level - 1;
-            Modifier attackModifier = new Modifier(attackSpeed.GetValue(level), ModifierType.Additive, this);
+            Modifier attackModifier = new Modifier(-attackSpeed.GetValue(level), ModifierType.Additive, this);
             Modifier speedModifier = new Modifier(moveSpeed.GetValue(level), ModifierType.Additive, this);
 
             owner.Stats.Speed.AddModifier(attackModifier);
