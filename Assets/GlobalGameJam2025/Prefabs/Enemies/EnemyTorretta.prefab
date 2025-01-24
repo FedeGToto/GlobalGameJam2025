@@ -306,7 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4851018964858896422}
   MoveRadius: 7
-  ShootSource: {fileID: 0}
+  ShootSource: {fileID: 7187616384508508906}
   AttackDistance: 15
   Bullet: {fileID: 8515581142457549215, guid: b92419ae7b7d16c4cbdf26de4a99aa4d, type: 3}
   firePoint: {fileID: 986261977150105271}
