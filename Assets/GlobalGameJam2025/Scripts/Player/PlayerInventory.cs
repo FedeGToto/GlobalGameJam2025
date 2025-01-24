@@ -10,7 +10,7 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] private PlayerManager playerManager;
     [SerializeField] private int maxCharacterLevel = 3;
 
-    public UnityAction OnBondAdded;
+    public UnityAction<CharacterSO> OnBondAdded;
 
     List<CharacterSO> bonds = new();
 
@@ -45,7 +45,7 @@ public class PlayerInventory : MonoBehaviour
             bond.LevelUp();
         }
 
-        OnBondAdded?.Invoke();
+        OnBondAdded?.Invoke(bond);
     }
 
     public IEnumerable<CharacterSO> GetBonds()

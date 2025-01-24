@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
 
     public UnityEvent OnDamageTaken;
     public UnityEvent<float> OnShieldChanged;
+    public UnityEvent OnShieldDestroied;
     public UnityEvent OnDie;
 
     public Stat Speed;
@@ -85,8 +86,11 @@ public class PlayerStats : MonoBehaviour, IDamagable, IAttacker
         else
         {
             CurrentShield -= dmg;
-            if (CurrentShield < 0)
+            if (CurrentShield <= 0)
+            {
+                OnShieldDestroied?.Invoke();
                 CurrentShield = 0;
+            }
 
             shieldCooldown = ShieldCooldown.Value;
 

@@ -26,7 +26,6 @@ public class CharacterCardUI : MonoBehaviour
         button.onClick.AddListener(() =>
         {
             GameManager.Instance.Player.Inventory.AddCharacter(character);
-            GameManager.Instance.Level.CanSpawn = true;
             parent.Hide();
         });
     }

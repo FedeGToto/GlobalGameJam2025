@@ -66,6 +66,10 @@ MonoBehaviour:
     m_Localized: Shield Regen. Rate (/s)
     m_Metadata:
       m_Items: []
+  - m_Id: 1119770558656512
+    m_Localized: YOU WON
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

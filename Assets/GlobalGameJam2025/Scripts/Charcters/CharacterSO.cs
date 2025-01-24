@@ -14,6 +14,9 @@ public class CharacterSO : ScriptableObject
     [SerializeField] private LocalizedString characterDescription;
     [SerializeField] private LocalizedString upgradeText;
 
+    [Header("Dialogues")]
+    [SerializeField] private LevelUpValue<Dialogue> dialogues;
+
     [Header("Effect")]
     [SerializeReference, SubclassSelector] public CharacterEffect CharEffect;
 
@@ -22,6 +25,8 @@ public class CharacterSO : ScriptableObject
 
     public string ID => characterID;
     public Sprite Artwork => artwork;
+
+    public Dialogue Dialogue => dialogues.GetValue(level-1) ;
 
     public int Level => level;
     public PlayerManager Owner => owner;

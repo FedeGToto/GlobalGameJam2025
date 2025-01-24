@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: char_aggressive
   m_EditorClassIdentifier: 
   characterID: char_aggressive
-  artwork: {fileID: 21300002, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
+  artwork: {fileID: 21300000, guid: d0212c94f33f335428a8b9399ab762bb, type: 3}
   characterName:
     m_TableReference:
       m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
@@ -41,6 +41,35 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  dialogues:
+    Values:
+    - lines:
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 4276154368
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - lines:
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 49360728064
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
+    - lines:
+      - m_TableReference:
+          m_TableCollectionName: GUID:65bfd1d115fa09444b52b777cff78739
+        m_TableEntryReference:
+          m_KeyId: 89697349632
+          m_Key: 
+        m_FallbackState: 0
+        m_WaitForCompletion: 0
+        m_LocalVariables: []
   CharEffect:
     rid: 7287588866280128514
   references:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: char_strategist
   m_EditorClassIdentifier: 
   characterID: char_strategist
-  artwork: {fileID: 21300014, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
+  artwork: {fileID: 21300000, guid: d36270134d888ee42b3db593ea9df4ae, type: 3}
   characterName:
     m_TableReference:
       m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
@@ -41,6 +41,8 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  dialogues:
+    Values: []
   CharEffect:
     rid: 7287588888596709388
   references:

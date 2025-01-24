@@ -14,10 +14,10 @@ public class BondsUI : MonoBehaviour
         player = GameManager.Instance.Player;
 
         player.Inventory.OnBondAdded += BondAdded;
-        BondAdded();
+        BondAdded(null);
     }
 
-    private void BondAdded()
+    private void BondAdded(CharacterSO character)
     {
         var characterBonds = player.Inventory.GetBonds().ToArray();
 

@@ -34,6 +34,7 @@ public class PlayerManager : Entity
 
     public UnityEvent<Enemy> OnDamageDealt;
     public UnityEvent OnPlayerDash;
+    public UnityEvent OnDashCooldown;
 
     public override void Start()
     {
@@ -48,7 +49,12 @@ public class PlayerManager : Entity
         StateMachine.Update();
 
         if (DashTimer > 0)
+        {
             DashTimer -= Time.deltaTime;
+
+            if (DashTimer<= 0)
+                OnDashCooldown?.Invoke();
+        }
     }
 
     public virtual void FixedUpdate()

@@ -1,11 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameEvents : MonoBehaviour
 {
     public static GameEvents current;
+    
 
     private void Awake()
     {
@@ -14,6 +13,7 @@ public class GameEvents : MonoBehaviour
 
     public event Action OnKill;
     public event Action OnGameOver;
+    public event Action OnWin;
 
     public void Kill()
     {
@@ -23,5 +23,10 @@ public class GameEvents : MonoBehaviour
     public void GameOver()
     {
         OnGameOver?.Invoke();
+    }
+
+    public void Win()
+    {
+        OnWin?.Invoke();
     }
 }

@@ -61,6 +61,12 @@ public class LevelManager : MonoBehaviour
 
         // Move it after selecting the dialogue
         currentLevel++;
+
+        if (currentLevel >= levels.Length)
+        {
+            GameEvents.current.Win();
+            return;
+        }
         StartNewLevel(currentLevel);
 
         OnLevelEnded?.Invoke();

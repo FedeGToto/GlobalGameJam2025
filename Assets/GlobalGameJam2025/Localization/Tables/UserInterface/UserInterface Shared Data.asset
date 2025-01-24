@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: pause_stats_shield_regen
     m_Metadata:
       m_Items: []
+  - m_Id: 1119770558656512
+    m_Key: win_screen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
