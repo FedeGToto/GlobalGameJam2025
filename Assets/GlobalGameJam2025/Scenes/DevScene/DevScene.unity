@@ -6552,6 +6552,7 @@ GameObject:
   - component: {fileID: 453632591}
   - component: {fileID: 453632592}
   - component: {fileID: 453632593}
+  - component: {fileID: 453632594}
   m_Layer: 5
   m_Name: CharacterSelector
   m_TagString: Untagged
@@ -6618,6 +6619,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterUIPrefab: {fileID: 2192084583275494815, guid: fcb611e6c36c03e40a7a6775f5584839,
     type: 3}
+  group: {fileID: 453632594}
+  selectionDuration: 1.5
+--- !u!225 &453632594
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453632590}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1001 &457251558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7505,6 +7520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a312654a4611e342bb4694aebfb84af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanSpawn: 1
   levels:
   - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
   - {fileID: 11400000, guid: 6aeece2ef3fd2cb43ad198729572cf78, type: 2}
@@ -26054,6 +26070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverCanvasGroup: {fileID: 897838163}
   mainMenuSceneIndex: 0
+  animationDuration: 3
 --- !u!4 &1823447822
 Transform:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,6 +7,8 @@ using UnityEngine;
 public class CharacterSelectionUI : MonoBehaviour
 {
     [SerializeField] private CharacterCardUI characterUIPrefab;
+    [SerializeField] private CanvasGroup group;
+    [SerializeField] private float selectionDuration;
 
     private List<CharacterCardUI> characterUIs;
 
@@ -27,10 +30,20 @@ public class CharacterSelectionUI : MonoBehaviour
     {
         gameObject.SetActive(true);
         PopulateCharacters(GameManager.Instance.Level.GetNextBonds());
+
+        group.DOFade(1, selectionDuration).OnComplete(() =>
+        {
+            group.interactable = true;
+            group.blocksRaycasts = true;
+        });
     }
 
     public void Hide()
     {
+        group.interactable = false;
+        group.blocksRaycasts = false;
+        group.alpha = 0;
+
         gameObject.SetActive(false);
         ClearCharacters();
     }

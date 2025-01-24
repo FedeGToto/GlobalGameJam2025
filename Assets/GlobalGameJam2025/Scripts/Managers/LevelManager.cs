@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class LevelManager : MonoBehaviour
 {
     public UnityAction OnLevelEnded;
+    public bool CanSpawn;
 
     [SerializeField] private LevelSO[] levels;
     [SerializeField] private Transform[] spawnPoints;
@@ -30,7 +31,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (spawnedEnemies > 0)
+        if (CanSpawn && spawnedEnemies > 0)
         {
             if (spawnTimer <= 0)
             {
@@ -54,6 +55,8 @@ public class LevelManager : MonoBehaviour
 
     public void EndLevel()
     {
+        CanSpawn = false;
+
         nextBonds = GameManager.Instance.Characters.GetPossibleUpgrades();
 
         // Move it after selecting the dialogue

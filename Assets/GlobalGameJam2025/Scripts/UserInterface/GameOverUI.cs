@@ -8,6 +8,7 @@ public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private CanvasGroup gameOverCanvasGroup;
     [SerializeField] private int mainMenuSceneIndex;
+    [SerializeField] private float animationDuration;
 
     private bool isLoading;
 
@@ -19,7 +20,7 @@ public class GameOverUI : MonoBehaviour
     private void OnGameOver()
     {
         gameOverCanvasGroup.gameObject.SetActive(true);
-        gameOverCanvasGroup.DOFade(1, 1);
+        gameOverCanvasGroup.DOFade(1, animationDuration);
     }
 
     public void MainMenu()
