@@ -632,6 +632,7 @@ MonoBehaviour:
   inventory: {fileID: 2585122009827027341}
   effects: {fileID: 761217088965455976}
   attackTrigger: {fileID: 9127461894341076185}
+  firePoint: {fileID: 7715212627498622980}
   AttackDuration: 0.3
   shieldObject: {fileID: 2210218845808453493}
   DashTime: 0.4

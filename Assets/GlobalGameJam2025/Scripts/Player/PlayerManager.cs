@@ -13,6 +13,7 @@ public class PlayerManager : Entity
 
     [Header("Attack")]
     [SerializeField] private GameObject attackTrigger;
+    [SerializeField] private Transform firePoint;
     public float AttackDuration = 0.3f;
 
     [Header("Shield")]
@@ -59,6 +60,8 @@ public class PlayerManager : Entity
     public PlayerAim Aim => aim;
     public PlayerInventory Inventory => inventory;
     public PlayerEffects Effects => effects;
+
+    public Transform FirePoint => firePoint;
 
     public void Attack(bool value)
     {

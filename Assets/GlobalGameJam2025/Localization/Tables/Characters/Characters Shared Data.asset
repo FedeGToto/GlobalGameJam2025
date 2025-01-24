@@ -75,6 +75,18 @@ MonoBehaviour:
     m_Key: nerd_upgrade
     m_Metadata:
       m_Items: []
+  - m_Id: 721404674764800
+    m_Key: strategist_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 721524271149056
+    m_Key: strategist_desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 722033338019840
+    m_Key: strategist_upgrade
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

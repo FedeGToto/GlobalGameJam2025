@@ -54,6 +54,18 @@ MonoBehaviour:
     m_Localized: Retry
     m_Metadata:
       m_Items: []
+  - m_Id: 809718069129216
+    m_Localized: Max Shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 809856233697280
+    m_Localized: Shield Regen. Timer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810025842962432
+    m_Localized: Shield Regen. Rate (/s)
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum DamageTo { Enemy, Player, Everyone }
+
 public class DamageZone : MonoBehaviour
 {
-    public enum DamageTo { Enemy, Player, Everyone }
 
     [SerializeField] private bool cacheDamage;
     [SerializeField] private GameObject owner;
@@ -44,7 +45,7 @@ public class DamageZone : MonoBehaviour
         this.owner = owner;
 
         if (cacheDamage)
-            owner.GetComponent<IAttacker>().GetDamageValue();
+            cachedDamage = owner.GetComponent<IAttacker>().GetDamageValue();
     }
 
     public void EndAnimation()

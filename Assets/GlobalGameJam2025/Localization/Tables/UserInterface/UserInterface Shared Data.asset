@@ -51,6 +51,18 @@ MonoBehaviour:
     m_Key: pause_retry
     m_Metadata:
       m_Items: []
+  - m_Id: 809718069129216
+    m_Key: pause_stats_maxshield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 809856233697280
+    m_Key: pause_stats_shieldcooldown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 810025842962432
+    m_Key: pause_stats_shield_regen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

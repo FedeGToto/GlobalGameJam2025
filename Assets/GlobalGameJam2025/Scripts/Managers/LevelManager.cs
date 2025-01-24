@@ -19,6 +19,8 @@ public class LevelManager : MonoBehaviour
     private int currentEnemies;
     private int currentLevel;
 
+    public UnityEvent<int> OnLevelStarted;
+
     private void Start()
     {
         GameEvents.current.OnKill += OnKill;
@@ -69,6 +71,8 @@ public class LevelManager : MonoBehaviour
         possibleEnemies = levels[level].Enemies;
         currentSpawnRate = levels[level].SpawnRate;
         spawnedEnemies = currentEnemies;
+
+        OnLevelStarted?.Invoke(level);
     }
 
     public void SpawnEnemy()

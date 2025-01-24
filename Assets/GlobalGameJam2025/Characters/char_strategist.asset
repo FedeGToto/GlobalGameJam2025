@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa3b8a73c1cf2a4498515e8fa985740, type: 3}
+  m_Name: char_strategist
+  m_EditorClassIdentifier: 
+  characterID: char_strategist
+  artwork: {fileID: 21300014, guid: 6c9322b3077ead5458fdad1c7e9227b5, type: 3}
+  characterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 721404674764800
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  characterDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 721524271149056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  upgradeText:
+    m_TableReference:
+      m_TableCollectionName: GUID:0edeca6cc1c6636468c452e34a39a7ea
+    m_TableEntryReference:
+      m_KeyId: 722033338019840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  CharEffect:
+    rid: 7287588888596709388
+  references:
+    version: 2
+    RefIds:
+    - rid: 7287588888596709388
+      type: {class: StrategistEffect, ns: , asm: Assembly-CSharp}
+      data:
+        bullet: {fileID: 8515581142457549215, guid: a65e313c0993099449bce3c477affa53,
+          type: 3}
+        cooldown:
+          Values:
+          - 8
+          - 6
+          - 4
+        damage:
+          Values:
+          - 0.6
+          - 0.7
+          - 0.8
